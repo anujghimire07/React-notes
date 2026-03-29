@@ -6,12 +6,17 @@ function App() {
   const [count, setcount] = useState(0);
   const [int, setint] = useState(-1);
 
-  //executes every time the app.jsx renders
+  //case 1: executes only on first render
   useEffect(() => {
     alert("welcome to the page");
   }, []);
 
-  //executes each time the value of count changes
+  //case 2: executes on every render
+  useEffect(() => {
+    alert("runs on every render");
+  });
+
+  //case 3: executes only when certain value changes
   useEffect(() => {
     alert(`count was changed to ${count}`);
     setint(int + 1);
