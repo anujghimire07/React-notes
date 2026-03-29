@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     alert(`count was changed to ${count}`);
     setint(int + 1);
-  }, [count]);
+  }, [count]); //here, count is a array dependency
 
   return (
     <>
