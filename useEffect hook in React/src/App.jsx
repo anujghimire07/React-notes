@@ -22,6 +22,13 @@ function App() {
     setint(int + 1);
   }, [count]); //here, count is a array dependency
 
+  //example of cleanup function
+  useEffect(() => {
+    return () => {
+      alert("component was unmounted");
+    };
+  }, []);
+
   return (
     <>
       <Para integer={int} />
