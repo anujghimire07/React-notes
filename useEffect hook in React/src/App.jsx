@@ -8,7 +8,7 @@ function App() {
 
   //case 1: executes only on first render
   useEffect(() => {
-    alert("welcome to the page");
+    alert("runs on first render");
   }, []);
 
   //case 2: executes on every render
