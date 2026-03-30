@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the app */
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+/* Container */
+#root {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1e4ed8;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Loading text */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* List */
+ol {
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+li {
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+li:hover {
+  background: #e2e8f0;
+}
