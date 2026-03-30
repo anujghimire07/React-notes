@@ -4,9 +4,16 @@ import "./App.css";
 
 function App() {
   const [data, setdata] = useState([]);
-  const [load, setload] = useState(false)
+  const [load, setload] = useState(false);
   useEffect(() => {
-    setdata = fetch("https://jsonplaceholder.typicode.com/users").json();
+    if (load) {
+      async function getdata() {
+        let res = await fetch("https://jsonplaceholder.typicode.com/users");
+        let d = await res.json();
+        setdata(d);
+      }
+      getdata();
+    }
   }, [load]);
 
   return (
@@ -20,7 +27,9 @@ function App() {
       </button>
 
       <ol>
-        {data.map()}
+        {data.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
       </ol>
     </>
   );
