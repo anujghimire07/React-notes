@@ -40,15 +40,16 @@ function App() {
         {/*suitable for one expected outcome*/}
         {showbtn && <p>i will be shown if show button is clicked </p>}
 
+        {/* suitable for if else type of situations */}
         {/* {showbtn? <p>show button was clicked</p>: <p>nothing</p>} */}
       </div>
 
       <div>
-        {student.map((person) => {
+        {student.map((s) => {
           return (
-            <p key={person.rollno}>
-              {" "}
-              {person.id},{person.grade}
+            <p key={s.rollno}>
+              {/*function must return a key*/}
+              {s.id},{s.grade}
             </p>
           );
         })}
