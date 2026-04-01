@@ -31,7 +31,7 @@ function App() {
       {/*  <Todo></Todo> */}
       <button
         onClick={() => {
-          setshowbtn(!showbtn); //if true => false;  if false => true
+          setshowbtn(!showbtn); //toggle between true and false. if true => false;  if false => true
         }}
       >
         show
