@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Link, Route, Outlet } from "react-router-dom";
-
+import "./App.css";
 
 function App() {
   function Home() {
