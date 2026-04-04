@@ -1,25 +1,51 @@
-import { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./Navbar";
 import Home from "./Home";
 import Login from "./Login";
-import { createBrowserRouter } from "react-router-dom";
+import About from "./About";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Users from "./Users";
 function App() {
   let router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: (
+        <>
+          <Nav /> <Home />
+        </>
+      ),
     },
     {
       path: "/login",
-      element: <Login />,
+      element: (
+        <>
+          <Nav /> <Login />
+        </>
+      ),
+    },
+    {
+      path: "/about",
+      element: (
+        <>
+          <Nav />
+          <About />
+        </>
+      ),
+    },
+    {
+      path: "/users/:username",
+      element: (
+        <>
+          <Nav />
+          <Users />
+        </>
+      ),
     },
   ]);
-  s;
+
   return (
     <>
-      <div> this is a paragraph</div>
-      <Nav />
+      <RouterProvider router={router} />
     </>
   );
 }

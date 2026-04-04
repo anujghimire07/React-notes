@@ -1,15 +1,42 @@
 import React from "react";
-import { useState, useEffect } from "react";
 
-
+import { NavLink } from "react-router-dom";
 export default function Nav() {
- 
   return (
     <>
       <nav>
-        <a href="/"><li>home</li></a>
-        <a href="/"><li>about</li></a>
-        <a href="/"><li>contact us</li></a>
+        <NavLink
+          className={(e) => {
+            return e.isActive ? "bgcolor" : "";
+          }}
+          to="/"
+        >
+          <li>home</li>
+        </NavLink>
+        <NavLink
+          className={(e) => {
+            return (e.isActive ? "bgcolor" : "");
+          }}
+          to="/login"
+        >
+          <li>Login</li>
+        </NavLink>
+        <NavLink
+          className={(e) => {
+            return e.isActive ? "bgcolor" : "";
+          }}
+          to="/about"
+        >
+          <li>About</li>
+        </NavLink>
+        <NavLink
+          className={(e) => {
+            return e.isActive ? "bgcolor" : "";
+          }}
+          to="/users"
+        >
+          <li>Users</li>
+        </NavLink>
       </nav>
     </>
   );
