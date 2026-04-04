@@ -12,7 +12,7 @@ function App() {
         <h3>Products Page</h3>
         <Link to="/products/cars">Cars</Link> {" | "}
         <Link to="/products/bikes">Bikes</Link>
-        <Outlet></Outlet>
+        <Outlet />
       </>
     );
   }
