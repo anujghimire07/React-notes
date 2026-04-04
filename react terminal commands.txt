@@ -3,4 +3,4 @@ npm run dev
 npm install
 npm install prop-types
 npm audit
-npm i react-router-dom
+npm install react-router-dom
