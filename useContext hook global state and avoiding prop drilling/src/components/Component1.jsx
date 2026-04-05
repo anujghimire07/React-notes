@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { CounterContext } from "./Context";
 
-const component1 = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Component1 = () => {
+  const data = useContext(CounterContext);
+  return <div>component4:{data}</div>;
+};
 
-export default component1
+export default Component1;
+
