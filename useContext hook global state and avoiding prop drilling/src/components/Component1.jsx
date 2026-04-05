@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import { CounterContext } from "./Context";
 
 const Component1 = () => {
@@ -7,4 +6,3 @@ const Component1 = () => {
 };
 
 export default Component1;
-

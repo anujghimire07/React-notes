@@ -1,4 +1,3 @@
-
 import Component1 from "./component1";
 const Button = () => {
   return (
@@ -11,4 +10,3 @@ const Button = () => {
 };
 
 export default Button;
-
