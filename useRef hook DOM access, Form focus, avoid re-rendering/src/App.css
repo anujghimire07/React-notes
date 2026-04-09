@@ -1,0 +1,10 @@
+body{
+  background-color: #282626;
+  color: antiquewhite;
+  text-align: center;
+}
+.scroll{
+  height: 100px;
+  background-color: white;
+  color: black;
+}
