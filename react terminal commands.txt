@@ -4,3 +4,6 @@ npm install
 npm install prop-types
 npm audit
 npm install react-router-dom
+npm init -y => create package.json
+https://tailwindcss.com/docs/installation/using-vite => visit this link to get tailwindcss installation steps
+npm install @reduxjs/toolkit react-redux => redux installation
